@@ -1,6 +1,6 @@
 /* eslint-disable camelcase */
 const { nanoid } = require('nanoid');
-const mysql = require('mysql');
+const mysql = require('mysql2');
 const books = require('./books');
 
 const con = mysql.createConnection({
