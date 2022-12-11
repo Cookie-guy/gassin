@@ -5,7 +5,7 @@ import{
   DB_PASSWORD,
   DB_NAME,
   DB_PORT
-} from './config.js'
+} from './server.js'
 
 const { nanoid } = require('nanoid');
 const mysql = require('mysql');
