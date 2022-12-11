@@ -3,8 +3,8 @@ const routes = require('./routes');
 
 const init = async () => {
   const server = Hapi.server({
-    port: 7227,
-    host: 'containers-us-west-37.railway.app',
+    port: 5000,
+    host: 'localhost',
     routes: {
       cors: {
         origin: ['*'],
