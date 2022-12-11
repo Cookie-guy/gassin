@@ -4,10 +4,10 @@ const mysql = require('mysql');
 const books = require('./books');
 
 const con = mysql.createConnection({
-  host: 'mysql://root:SI5K8CdhDmeeHM9APVkT@containers-us-west-37.railway.app:7227/railway',
-  user: 'root',
-  password: 'SI5K8CdhDmeeHM9APVkT',
-  database: 'railway',
+  host: process.env.DB_HOST || 'mysql://root:SI5K8CdhDmeeHM9APVkT@containers-us-west-37.railway.app:7227/railway',
+  user: process.env.DB_USER|| 'root',
+  password: process.env.DB_PASSWORD || 'SI5K8CdhDmeeHM9APVkT',
+  database: process.env.DB_NAME || 'railway',
 //   port: 7227,
   multipleStatements: true,
 });
