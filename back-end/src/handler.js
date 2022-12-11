@@ -8,7 +8,7 @@ const con = mysql.createConnection({
   user: 'root',
   password: 'SI5K8CdhDmeeHM9APVkT',
   database: 'railway',
-  port: 7227,
+//   port: 7227,
   multipleStatements: true,
 });
 
