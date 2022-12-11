@@ -4,10 +4,10 @@ const mysql = require('mysql');
 const books = require('./books');
 
 const con = mysql.createConnection({
-  host: 'mysql://root:SI5K8CdhDmeeHM9APVkT@containers-us-west-37.railway.app:7227/railway',
+  host: 'localhost',
   user: 'root',
-  password: 'SI5K8CdhDmeeHM9APVkT',
-  database: 'railway',
+  password: '',
+  database: 'gassin',
 //   port: 7227,
   multipleStatements: true,
 });
