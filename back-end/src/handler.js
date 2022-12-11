@@ -1,14 +1,22 @@
 /* eslint-disable camelcase */
+import{
+  DB_HOST,
+  DB_USER,
+  DB_PASSWORD,
+  DB_NAME,
+  DB_PORT
+} from './config.js'
+
 const { nanoid } = require('nanoid');
 const mysql = require('mysql');
 const books = require('./books');
 
 const con = mysql.createConnection({
-  host: process.env.DB_HOST || 'localhost',
-  user: process.env.DB_USER|| 'root',
-  password: process.env.DB_PASSWORD || '',
-  database: process.env.DB_NAME || 'gassin',
-  port: 7227,
+  host: DB_HOST,
+  user: DB_USER,
+  password: DB_PASSWORD,
+  database: DB_NAME,
+  port: DB_PORT,
   multipleStatements: true,
 });
 
