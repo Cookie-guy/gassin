@@ -3,11 +3,10 @@ const { nanoid } = require('nanoid');
 const mysql = require('mysql');
 const books = require('./books');
 
-const con = mysql.createConnection({
-  host: 'localhost',
+  host: 'mysql://root:SI5K8CdhDmeeHM9APVkT@containers-us-west-37.railway.app:7227/railway',
   user: 'root',
-  password: '',
-  database: 'gassin',
+  password: 'SI5K8CdhDmeeHM9APVkT',
+  database: 'railway',
 //   port: 7227,
   multipleStatements: true,
 });
